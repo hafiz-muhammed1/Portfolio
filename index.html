@@ -1,140 +1,169 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hafiz Muhammed | QA Portfolio</title>
+    <title>Hafiz Muhammed | QA Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        darkbg: '#080808',
+                        darkbg: '#050505',
                         steelblue: '#4A90E2',
                     }
                 }
             }
         }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <<style>
-    /* 1. Tell the entire page to respect the fixed nav bar height when scrolling */
-    html { 
-        scroll-behavior: smooth; 
-        scroll-padding-top: 80px; /* Adjust this number to match your nav bar height */
-    }
-
-    /* Keep your existing style rules below this line */
-    body { font-family: 'Inter', sans-serif; background-color: #080808; color: white; }
-    .glass { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
-    .nav-link:hover { color: #4A90E2; transition: all 0.3s ease; }
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #050505; color: white; }
+        /* Adjusted glass intensity for better readability during scroll */
+        .glass-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); }
+        .glow-text { text-shadow: 0 0 20px rgba(74, 144, 226, 0.3); }
+        .hero-gradient { background: radial-gradient(circle at center, rgba(74, 144, 226, 0.15) 0%, transparent 70%); }
+        
+        @keyframes subtle-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(74, 144, 226, 0.2); }
+            70% { box-shadow: 0 0 0 10px rgba(74, 144, 226, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(74, 144, 226, 0); }
+        }
+        .btn-pulse:hover { animation: subtle-pulse 1.5s infinite; }
+    </style>
 </head>
 <body class="antialiased">
 
-    <nav class="fixed top-0 left-0 right-0 z-50 glass py-4 px-6">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <div class="text-xl font-extrabold tracking-tighter uppercase">HM<span class="text-steelblue">.QA</span></div>
+    <nav class="fixed top-0 left-0 right-0 z-50 py-6 px-10">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass-card px-6 py-3 rounded-full shadow-2xl shadow-black/50">
+            <div class="text-lg font-bold tracking-tighter uppercase">HM<span class="text-steelblue">.</span></div>
             
-            <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-widest">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#contact" class="nav-link">Contact</a>
+            <div class="hidden md:flex gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
+                <a href="#home" class="transition-all duration-500 hover:text-white hover:tracking-[0.3em] ease-in-out">Home</a>
+                <a href="#metrics" class="transition-all duration-500 hover:text-white hover:tracking-[0.3em] ease-in-out">Metrics</a>
+                <a href="#education" class="transition-all duration-500 hover:text-white hover:tracking-[0.3em] ease-in-out">Education</a>
+                <a href="#expertise" class="transition-all duration-500 hover:text-white hover:tracking-[0.3em] ease-in-out">Expertise</a>
+                <a href="#contact" class="transition-all duration-500 hover:text-white hover:tracking-[0.3em] ease-in-out">Contact</a>
             </div>
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hafizmuhammed043@gmail.com" target="_blank" class="bg-steelblue px-5 py-2 rounded-full text-xs font-bold hover:bg-white hover:text-steelblue transition-all">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hafizmuhammed043@gmail.com" 
+               target="_blank" 
+               class="btn-pulse bg-steelblue/10 text-steelblue text-[11px] font-bold px-5 py-2.5 rounded-full border border-steelblue/30 hover:bg-steelblue hover:text-white transition-all duration-300 uppercase tracking-widest shadow-lg">
                 Hire Me
             </a>
         </div>
     </nav>
 
-    <div id="home" class="max-w-5xl mx-auto px-6 pt-32 py-12">
-       <header id="home" class="pt-32 mb-24 flex flex-col md:flex-row items-center gap-12">
+    <section id="home" class="relative z-10 min-h-screen flex flex-col items-center justify-center text-center px-6 pb-48 hero-gradient">
+    <div class="mb-8 relative group">
+        <div class="absolute -inset-1 bg-steelblue rounded-full blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+        <img src="profile.jpg" alt="Hafiz Muhammed" class="relative w-28 h-28 rounded-full border-2 border-white/10 object-cover bg-darkbg" onerror="this.src='https://ui-avatars.com/api/?name=H+M&background=4A90E2&color=fff'">
+    </div>
+    <span class="text-steelblue font-bold text-[10px] uppercase tracking-[0.4em] mb-4 border border-steelblue/20 px-4 py-1.5 rounded-full bg-steelblue/5 select-none">• Available for Opportunities</span>
+    <h1 class="text-5xl md:text-7xl font-extrabold mb-4 glow-text tracking-tight">Hafiz Muhammed</h1>
+    <p class="text-steelblue font-medium text-lg mb-6 tracking-wide">QA Engineer | Automation Specialist</p>
+    <p class="text-gray-500 max-w-lg mb-10 leading-relaxed text-sm">Ensuring software excellence through automated precision and rigorous testing protocols.</p>
     
-    <div class="flex-1 order-2 md:order-1 text-center md:text-left">
-        <span class="text-steelblue font-semibold text-sm tracking-widest uppercase mb-4 block">QA Engineer & Tester</span>
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">Hafiz Muhammed.</h1>
-        <p class="text-gray-400 text-lg mb-10 leading-relaxed max-w-xl">
-            Focused on delivering quality software through manual inspection and version control. Currently building my expertise in the QA ecosystem.
-        </p>
-        <div class="flex flex-wrap justify-center md:justify-start gap-4">
-            <a href="Hafiz_Muhammed_QA_Engineer.pdf" target="_blank" class="bg-steelblue text-white px-8 py-4 rounded-xl font-bold hover:shadow-[0_0_20px_rgba(74,144,226,0.4)] transition-all">
-                Download Resume
-            </a>
-        </div>
-    </div>
+    <a href="Hafiz_Muhammed_QA_Engineer.pdf" target="_blank" class="relative z-20 bg-steelblue text-white flex items-center gap-3 px-10 py-4 rounded-xl font-bold hover:scale-105 active:scale-95 transition-all shadow-lg shadow-steelblue/15 hover:shadow-2xl hover:shadow-steelblue/30">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12 a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+        Download CV
+    </a>
+</section>
 
-    <div class="order-1 md:order-2">
+    <section id="metrics" class="py-24 max-w-5xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <p class="text-steelblue text-[10px] uppercase tracking-[0.5em] mb-2">Impact</p>
+            <h2 class="text-3xl font-bold">Measurable Results</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-12 rounded-[2.5rem] text-center group hover:bg-white/5 transition-all duration-500">
+                <div class="text-5xl font-extrabold text-steelblue mb-4 glow-text group-hover:scale-110 transition-transform">40%</div>
+                <p class="text-gray-400 text-sm font-semibold uppercase tracking-widest">Manual Effort Reduction</p>
+            </div>
+            <div class="glass-card p-12 rounded-[2.5rem] text-center group hover:bg-white/5 transition-all duration-500">
+                <div class="text-5xl font-extrabold text-steelblue mb-4 glow-text group-hover:scale-110 transition-transform">80+</div>
+                <p class="text-gray-400 text-sm font-semibold uppercase tracking-widest">Detailed Test Cases</p>
+            </div>
+            <div class="glass-card p-12 rounded-[2.5rem] text-center group hover:bg-white/5 transition-all duration-500">
+                <div class="text-5xl font-extrabold text-steelblue mb-4 glow-text group-hover:scale-110 transition-transform">POM</div>
+                <p class="text-gray-400 text-sm font-semibold uppercase tracking-widest">Scalable Architecture</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-24 max-w-5xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <p class="text-steelblue text-[10px] uppercase tracking-[0.5em] mb-2">Academic Foundation</p>
+            <h2 class="text-3xl font-bold">Education</h2>
+        </div>
         <div class="relative group">
-            <div class="absolute -inset-1 bg-steelblue rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-            
-            <div class="relative w-48 h-48 md:w-72 md:h-72 bg-glass rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                <img src="hafiz-profile.jpg" 
-                     alt="Hafiz Muhammad" 
-                     class="w-full h-full object-cover">
+            <div class="absolute -inset-1 bg-gradient-to-r from-steelblue/20 to-transparent rounded-[2.5rem] blur-2xl opacity-40"></div>
+            <div class="relative glass-card p-10 md:p-16 rounded-[2.5rem] flex flex-col md:flex-row justify-between items-center gap-8 border-steelblue/20">
+                <div class="flex flex-col items-center md:items-start">
+                    <div class="bg-steelblue/20 p-4 rounded-2xl text-steelblue mb-6 inline-block">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-extrabold mb-2 tracking-tight text-center md:text-left">Diploma in Computer Science</h3>
+                    <p class="text-steelblue font-semibold text-lg tracking-wide uppercase opacity-80 text-center md:text-left">Board of Technical Examinations, Kerala</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <div class="text-6xl md:text-8xl font-black text-white/5 select-none">2024</div>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </section>
 
-        <section id="about" class="mb-24 pt-12">
-            <h2 class="text-2xl font-bold mb-8 flex items-center">
-                <span class="w-8 h-px bg-steelblue mr-4"></span> About Me
-            </h2>
-            <div class="glass p-8 rounded-3xl border-white/5">
-                <p class="text-gray-300 text-lg leading-relaxed mb-6">
-                    I am a Computer Science Diploma holder from Kerala with a passion for software quality. I enjoy breaking things to understand how to fix them better. 
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <h4 class="text-steelblue font-bold text-xs uppercase mb-2">Education</h4>
-                        <p class="text-white font-semibold">Diploma in Computer Science (2024)</p>
-                    </div>
-                    <div>
-                        <h4 class="text-steelblue font-bold text-xs uppercase mb-2">Base</h4>
-                        <p class="text-white font-semibold">Ernakulam, Kerala</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="mb-24 pt-12">
-            <h2 class="text-2xl font-bold mb-8 flex items-center">
-                <span class="w-8 h-px bg-steelblue mr-4"></span> Core Skills
-            </h2>
+    <section id="expertise" class="py-24">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <p class="text-steelblue text-[10px] uppercase tracking-[0.5em] mb-2">What I Do</p>
+            <h2 class="text-3xl font-bold mb-16">Core Expertise</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="glass p-8 rounded-2xl border-white/5">
-                    <h3 class="font-bold mb-4 text-steelblue">Manual Testing</h3>
-                    <ul class="text-gray-400 space-y-2 text-sm">
-                        <li>• Bug Reporting & Tracking</li>
-                        <li>• Test Case Execution</li>
-                        <li>• UI/UX Inspection</li>
-                    </ul>
+                <div class="glass-card p-8 rounded-2xl text-left flex gap-6 items-start hover:border-steelblue/50 transition-all duration-300">
+                    <div class="bg-steelblue/10 p-3 rounded-lg text-steelblue">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-2">Automation</h4>
+                        <p class="text-gray-500 text-sm">Building reusable Selenium test suites in Java and TestNG.</p>
+                    </div>
                 </div>
-                <div class="glass p-8 rounded-2xl border-white/5">
-                    <h3 class="font-bold mb-4 text-steelblue">Tools</h3>
-                    <ul class="text-gray-400 space-y-2 text-sm">
-                        <li>• GitHub / Version Control</li>
-                        <li>• Basic SQL Knowledge</li>
-                        <li>• Chrome DevTools</li>
-                    </ul>
+                <div class="glass-card p-8 rounded-2xl text-left flex gap-6 items-start hover:border-steelblue/50 transition-all duration-300">
+                    <div class="bg-steelblue/10 p-3 rounded-lg text-steelblue">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-2">Manual QA</h4>
+                        <p class="text-gray-500 text-sm">Comprehensive functional and regression testing strategies.</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer id="contact" class="border-t border-white/10 pt-16 pb-20 flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-center md:text-left">
-                <h4 class="text-white text-xl font-bold">Get In Touch</h4>
-                <p class="text-gray-500">Let's talk about quality.</p>
+    <section id="contact" class="py-32 max-w-4xl mx-auto px-6 text-center">
+        <p class="text-steelblue text-[10px] uppercase tracking-[0.5em] mb-4">Get In Touch</p>
+        <h2 class="text-5xl font-bold mb-6 tracking-tighter">Let's Connect</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16">
+            <div class="glass-card p-6 rounded-2xl hover:border-steelblue/30 transition-all">
+                <p class="text-steelblue text-[10px] uppercase font-bold mb-1 text-center">Location</p>
+                <p class="text-sm font-semibold text-center">Ernakulam, Kerala</p>
             </div>
-            <div class="flex gap-8 text-sm font-bold">
-                <a href="mailto:hafizmuhammed043@gmail.com" class="text-steelblue hover:underline transition-all">Email</a>
-                <span class="text-gray-400">+91 9995693724</span>
+            <div class="glass-card p-6 rounded-2xl hover:border-steelblue/30 transition-all">
+                <p class="text-steelblue text-[10px] uppercase font-bold mb-1 text-center">Email</p>
+                <p class="text-sm font-semibold text-center">hafizmuhammed043@gmail.com</p>
             </div>
-        </footer>
-    </div>
+            <div class="glass-card p-6 rounded-2xl hover:border-steelblue/30 transition-all">
+                <p class="text-steelblue text-[10px] uppercase font-bold mb-1 text-center">Phone</p>
+                <p class="text-sm font-semibold text-center">+91 9995593724</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center text-gray-600 text-[10px] uppercase tracking-widest">
+        © 2026 Hafiz Muhammed. All rights reserved.
+    </footer>
 
 </body>
 </html>
