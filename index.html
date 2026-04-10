@@ -18,12 +18,18 @@
         }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; background-color: #080808; color: white; }
-        .glass { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
-        .nav-link:hover { color: #4A90E2; transition: all 0.3s ease; }
-    </style>
+    <<style>
+    /* 1. Tell the entire page to respect the fixed nav bar height when scrolling */
+    html { 
+        scroll-behavior: smooth; 
+        scroll-padding-top: 80px; /* Adjust this number to match your nav bar height */
+    }
+
+    /* Keep your existing style rules below this line */
+    body { font-family: 'Inter', sans-serif; background-color: #080808; color: white; }
+    .glass { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
+    .nav-link:hover { color: #4A90E2; transition: all 0.3s ease; }
+</style>
 </head>
 <body class="antialiased">
 
@@ -49,12 +55,12 @@
     
     <div class="flex-1 order-2 md:order-1 text-center md:text-left">
         <span class="text-steelblue font-semibold text-sm tracking-widest uppercase mb-4 block">QA Engineer & Tester</span>
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">Hafiz Muhammad.</h1>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">Hafiz Muhammed.</h1>
         <p class="text-gray-400 text-lg mb-10 leading-relaxed max-w-xl">
             Focused on delivering quality software through manual inspection and version control. Currently building my expertise in the QA ecosystem.
         </p>
         <div class="flex flex-wrap justify-center md:justify-start gap-4">
-            <a href="Hafiz_Muhammad_QA_Engineer.pdf" target="_blank" class="bg-steelblue text-white px-8 py-4 rounded-xl font-bold hover:shadow-[0_0_20px_rgba(74,144,226,0.4)] transition-all">
+            <a href="Hafiz_Muhammed_QA_Engineer.pdf" target="_blank" class="bg-steelblue text-white px-8 py-4 rounded-xl font-bold hover:shadow-[0_0_20px_rgba(74,144,226,0.4)] transition-all">
                 Download Resume
             </a>
         </div>
