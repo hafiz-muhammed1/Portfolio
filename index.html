@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-pt-32">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,9 +19,8 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+        html { scroll-behavior: smooth; }
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #050505; color: white; }
-        /* Adjusted glass intensity for better readability during scroll */
         .glass-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); }
         .glow-text { text-shadow: 0 0 20px rgba(74, 144, 226, 0.3); }
         .hero-gradient { background: radial-gradient(circle at center, rgba(74, 144, 226, 0.15) 0%, transparent 70%); }
@@ -45,32 +44,33 @@
                 <a href="#metrics" class="transition-all duration-500 hover:text-white hover:tracking-[0.3em] ease-in-out">Metrics</a>
                 <a href="#education" class="transition-all duration-500 hover:text-white hover:tracking-[0.3em] ease-in-out">Education</a>
                 <a href="#expertise" class="transition-all duration-500 hover:text-white hover:tracking-[0.3em] ease-in-out">Expertise</a>
+                <a href="#projects" class="transition-all duration-500 hover:text-white hover:tracking-[0.3em] ease-in-out">Projects</a>
                 <a href="#contact" class="transition-all duration-500 hover:text-white hover:tracking-[0.3em] ease-in-out">Contact</a>
             </div>
 
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hafizmuhammed043@gmail.com" 
                target="_blank" 
-               class="btn-pulse bg-steelblue/10 text-steelblue text-[11px] font-bold px-5 py-2.5 rounded-full border border-steelblue/30 hover:bg-steelblue hover:text-white transition-all duration-300 uppercase tracking-widest shadow-lg">
+               class="btn-pulse bg-steelblue/10 text-steelblue text-[11px] font-bold px-5 py-2.5 rounded-full border border-steelblue/30 hover:bg-steelblue hover:text-white transition-all duration-300 uppercase tracking-widest">
                 Hire Me
             </a>
         </div>
     </nav>
 
-    <section id="home" class="relative z-10 min-h-screen flex flex-col items-center justify-center text-center px-6 pb-48 hero-gradient">
-    <div class="mb-8 relative group">
-        <div class="absolute -inset-1 bg-steelblue rounded-full blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-        <img src="profile.jpg" alt="Hafiz Muhammed" class="relative w-28 h-28 rounded-full border-2 border-white/10 object-cover bg-darkbg" onerror="this.src='https://ui-avatars.com/api/?name=H+M&background=4A90E2&color=fff'">
-    </div>
-    <span class="text-steelblue font-bold text-[10px] uppercase tracking-[0.4em] mb-4 border border-steelblue/20 px-4 py-1.5 rounded-full bg-steelblue/5 select-none">• Available for Opportunities</span>
-    <h1 class="text-5xl md:text-7xl font-extrabold mb-4 glow-text tracking-tight">Hafiz Muhammed</h1>
-    <p class="text-steelblue font-medium text-lg mb-6 tracking-wide">QA Engineer | Automation Specialist</p>
-    <p class="text-gray-500 max-w-lg mb-10 leading-relaxed text-sm">Ensuring software excellence through automated precision and rigorous testing protocols.</p>
-    
-    <a href="Hafiz_Muhammed_QA_Engineer.pdf" target="_blank" class="relative z-20 bg-steelblue text-white flex items-center gap-3 px-10 py-4 rounded-xl font-bold hover:scale-105 active:scale-95 transition-all shadow-lg shadow-steelblue/15 hover:shadow-2xl hover:shadow-steelblue/30">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12 a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-        Download CV
-    </a>
-</section>
+    <section id="home" class="relative z-10 min-h-screen flex flex-col items-center justify-center text-center px-6 pt-40 pb-48 hero-gradient">
+        <div class="mb-8 relative group">
+            <div class="absolute -inset-1 bg-steelblue rounded-full blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+            <img src="profile.jpg" alt="Hafiz Muhammed" class="relative w-28 h-28 rounded-full border-2 border-white/10 object-cover bg-darkbg" onerror="this.src='https://ui-avatars.com/api/?name=H+M&background=4A90E2&color=fff'">
+        </div>
+        <span class="text-steelblue font-bold text-[10px] uppercase tracking-[0.4em] mb-4 border border-steelblue/20 px-4 py-1.5 rounded-full bg-steelblue/5">• Available for Opportunities</span>
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-4 glow-text tracking-tight">Hafiz Muhammed</h1>
+        <p class="text-steelblue font-medium text-lg mb-6 tracking-wide">QA Engineer | Automation Specialist</p>
+        <p class="text-gray-500 max-w-lg mb-10 leading-relaxed text-sm">Ensuring software excellence through automated precision and rigorous testing protocols.</p>
+        
+        <a href="Hafiz_Muhammed_QA_Engineer.pdf" target="_blank" class="relative z-20 bg-steelblue text-white flex items-center gap-3 px-10 py-4 rounded-xl font-bold hover:scale-105 active:scale-95 transition-all shadow-xl shadow-steelblue/20">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12 a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            Download CV
+        </a>
+    </section>
 
     <section id="metrics" class="py-24 max-w-5xl mx-auto px-6">
         <div class="text-center mb-16">
@@ -78,17 +78,17 @@
             <h2 class="text-3xl font-bold">Measurable Results</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass-card p-12 rounded-[2.5rem] text-center group hover:bg-white/5 transition-all duration-500">
+            <div class="glass-card p-12 rounded-[2.5rem] text-center group transition-all duration-500">
                 <div class="text-5xl font-extrabold text-steelblue mb-4 glow-text group-hover:scale-110 transition-transform">40%</div>
-                <p class="text-gray-400 text-sm font-semibold uppercase tracking-widest">Manual Effort Reduction</p>
+                <p class="text-gray-400 text-[10px] font-bold uppercase tracking-widest">Manual Effort Reduction</p>
             </div>
-            <div class="glass-card p-12 rounded-[2.5rem] text-center group hover:bg-white/5 transition-all duration-500">
+            <div class="glass-card p-12 rounded-[2.5rem] text-center group transition-all duration-500">
                 <div class="text-5xl font-extrabold text-steelblue mb-4 glow-text group-hover:scale-110 transition-transform">80+</div>
-                <p class="text-gray-400 text-sm font-semibold uppercase tracking-widest">Detailed Test Cases</p>
+                <p class="text-gray-400 text-[10px] font-bold uppercase tracking-widest">Detailed Test Cases</p>
             </div>
-            <div class="glass-card p-12 rounded-[2.5rem] text-center group hover:bg-white/5 transition-all duration-500">
+            <div class="glass-card p-12 rounded-[2.5rem] text-center group transition-all duration-500">
                 <div class="text-5xl font-extrabold text-steelblue mb-4 glow-text group-hover:scale-110 transition-transform">POM</div>
-                <p class="text-gray-400 text-sm font-semibold uppercase tracking-widest">Scalable Architecture</p>
+                <p class="text-gray-400 text-[10px] font-bold uppercase tracking-widest">Scalable Architecture</p>
             </div>
         </div>
     </section>
@@ -105,8 +105,8 @@
                     <div class="bg-steelblue/20 p-4 rounded-2xl text-steelblue mb-6 inline-block">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
                     </div>
-                    <h3 class="text-3xl md:text-4xl font-extrabold mb-2 tracking-tight text-center md:text-left">Diploma in Computer Science</h3>
-                    <p class="text-steelblue font-semibold text-lg tracking-wide uppercase opacity-80 text-center md:text-left">Board of Technical Examinations, Kerala</p>
+                    <h3 class="text-3xl md:text-4xl font-extrabold mb-2">Diploma in Computer Science</h3>
+                    <p class="text-steelblue font-semibold text-lg uppercase tracking-wide opacity-80">Board of Technical Examinations, Kerala</p>
                 </div>
                 <div class="text-center md:text-right">
                     <div class="text-6xl md:text-8xl font-black text-white/5 select-none">2024</div>
@@ -115,48 +115,96 @@
         </div>
     </section>
 
-    <section id="expertise" class="py-24">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <p class="text-steelblue text-[10px] uppercase tracking-[0.5em] mb-2">What I Do</p>
-            <h2 class="text-3xl font-bold mb-16">Core Expertise</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="glass-card p-8 rounded-2xl text-left flex gap-6 items-start hover:border-steelblue/50 transition-all duration-300">
-                    <div class="bg-steelblue/10 p-3 rounded-lg text-steelblue">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                    </div>
-                    <div>
-                        <h4 class="font-bold mb-2">Automation</h4>
-                        <p class="text-gray-500 text-sm">Building reusable Selenium test suites in Java and TestNG.</p>
-                    </div>
+    <section id="expertise" class="py-24 max-w-5xl mx-auto px-6 text-center">
+        <p class="text-steelblue text-[10px] uppercase tracking-[0.5em] mb-2">What I Do</p>
+        <h2 class="text-3xl font-bold mb-16">Core Expertise</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="glass-card p-8 rounded-2xl text-left flex gap-6 items-start hover:border-steelblue/50 transition-all duration-300">
+                <div class="bg-steelblue/10 p-3 rounded-lg text-steelblue">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                 </div>
-                <div class="glass-card p-8 rounded-2xl text-left flex gap-6 items-start hover:border-steelblue/50 transition-all duration-300">
-                    <div class="bg-steelblue/10 p-3 rounded-lg text-steelblue">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                    <div>
-                        <h4 class="font-bold mb-2">Manual QA</h4>
-                        <p class="text-gray-500 text-sm">Comprehensive functional and regression testing strategies.</p>
-                    </div>
+                <div>
+                    <h4 class="font-bold mb-2">Automation</h4>
+                    <p class="text-gray-500 text-sm">Building reusable Selenium test suites in Java and TestNG.</p>
+                </div>
+            </div>
+            <div class="glass-card p-8 rounded-2xl text-left flex gap-6 items-start hover:border-steelblue/50 transition-all duration-300">
+                <div class="bg-steelblue/10 p-3 rounded-lg text-steelblue">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2">Manual QA</h4>
+                    <p class="text-gray-500 text-sm">Comprehensive functional and regression testing strategies.</p>
+                </div>
+            </div>
+            <div class="glass-card p-8 rounded-2xl text-left flex gap-6 items-start hover:border-steelblue/50 transition-all duration-300">
+                <div class="bg-steelblue/10 p-3 rounded-lg text-steelblue">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2">API Validation</h4>
+                    <p class="text-gray-500 text-sm">End-to-end testing of backend services via Postman.</p>
+                </div>
+            </div>
+            <div class="glass-card p-8 rounded-2xl text-left flex gap-6 items-start hover:border-steelblue/50 transition-all duration-300">
+                <div class="bg-steelblue/10 p-3 rounded-lg text-steelblue">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2">Defect Management</h4>
+                    <p class="text-gray-500 text-sm">Full-cycle bug tracking and Agile workflows using JIRA.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-32 max-w-4xl mx-auto px-6 text-center">
+    <section id="projects" class="py-24 max-w-5xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <p class="text-steelblue text-[10px] uppercase tracking-[0.5em] mb-2">Portfolio</p>
+            <h2 class="text-3xl font-bold">Featured Projects</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card p-8 rounded-3xl group hover:border-steelblue/50 transition-all">
+                <div class="bg-steelblue/10 w-12 h-12 rounded-xl flex items-center justify-center text-steelblue mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Web Automation Suite</h4>
+                <p class="text-gray-500 text-sm mb-6">Developed modular end-to-end user flows for Login and Checkout using Java and Selenium.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[9px] font-bold px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase tracking-widest text-gray-400">Java</span>
+                    <span class="text-[9px] font-bold px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase tracking-widest text-gray-400">Selenium</span>
+                    <span class="text-[9px] font-bold px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase tracking-widest text-gray-400">TestNG</span>
+                </div>
+            </div>
+            <div class="glass-card p-8 rounded-3xl group hover:border-steelblue/50 transition-all">
+                <div class="bg-steelblue/10 w-12 h-12 rounded-xl flex items-center justify-center text-steelblue mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                </div>
+                <h4 class="text-xl font-bold mb-3">E-Commerce Audit</h4>
+                <p class="text-gray-500 text-sm mb-6">Analyzed high-impact scenarios and managed 100% of defects in JIRA for a retail platform.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[9px] font-bold px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase tracking-widest text-gray-400">JIRA</span>
+                    <span class="text-[9px] font-bold px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase tracking-widest text-gray-400">Manual Testing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 max-w-5xl mx-auto px-6 text-center">
         <p class="text-steelblue text-[10px] uppercase tracking-[0.5em] mb-4">Get In Touch</p>
-        <h2 class="text-5xl font-bold mb-6 tracking-tighter">Let's Connect</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16">
-            <div class="glass-card p-6 rounded-2xl hover:border-steelblue/30 transition-all">
-                <p class="text-steelblue text-[10px] uppercase font-bold mb-1 text-center">Location</p>
-                <p class="text-sm font-semibold text-center">Ernakulam, Kerala</p>
+        <h2 class="text-5xl font-bold mb-12 tracking-tighter">Let's Connect</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass-card p-8 rounded-2xl hover:border-steelblue/30 transition-all">
+                <p class="text-steelblue text-[10px] uppercase font-bold mb-2">Location</p>
+                <p class="text-sm font-semibold">Ernakulam, Kerala</p>
             </div>
-            <div class="glass-card p-6 rounded-2xl hover:border-steelblue/30 transition-all">
-                <p class="text-steelblue text-[10px] uppercase font-bold mb-1 text-center">Email</p>
-                <p class="text-sm font-semibold text-center">hafizmuhammed043@gmail.com</p>
+            <div class="glass-card p-8 rounded-2xl hover:border-steelblue/30 transition-all">
+                <p class="text-steelblue text-[10px] uppercase font-bold mb-2">Email</p>
+                <p class="text-sm font-semibold">hafizmuhammed043@gmail.com</p>
             </div>
-            <div class="glass-card p-6 rounded-2xl hover:border-steelblue/30 transition-all">
-                <p class="text-steelblue text-[10px] uppercase font-bold mb-1 text-center">Phone</p>
-                <p class="text-sm font-semibold text-center">+91 9995593724</p>
+            <div class="glass-card p-8 rounded-2xl hover:border-steelblue/30 transition-all">
+                <p class="text-steelblue text-[10px] uppercase font-bold mb-2">Phone</p>
+                <p class="text-sm font-semibold">+91 9995693724</p>
             </div>
         </div>
     </section>
